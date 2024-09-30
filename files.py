@@ -7,9 +7,6 @@ df=st.file_uploader("UPLOAD THE CSV FILE :",type=["csv","xlsx"])
 if df is not None:
     st.dataframe(df);
 
-df=pd.read_csv("Products.csv")
-if df is not None:
-    st.table(df.head())
 
 st.subheader("DEALING WITH IMAGES")
 img=st.file_uploader("UPLOAD THE IMAGE FILE :",type=["png","jpg"])
